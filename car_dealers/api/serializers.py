@@ -1,21 +1,24 @@
 from rest_framework import serializers
 
-from .models import Dealer, Car
+from .models import Car, Dealer
 
 
-class DealerDetailSerializer(serializers.ModelSerializer):
+class CarSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Dealer
+        model = Car
         fields = '__all__'
 
 
 class CarDetailSerializer(serializers.ModelSerializer):
     class Meta:
         model = Car
-        fields = '__all__'
+        fields = ('id', 'vin', 'brand')
 
 
-class CarListSerializer(serializers.ModelSerializer):
+class DealerSerializer(serializers.ModelSerializer):
+
+    cars = CarDetailSerializer(many=True)
+
     class Meta:
-        model = Car
-        fields = ('vin', 'brand', 'car_model',)
+        model = Dealer
+        fields = ('name', 'address', 'cars',)

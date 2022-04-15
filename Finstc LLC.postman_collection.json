@@ -1,0 +1,331 @@
+{
+	"info": {
+		"_postman_id": "10202dd6-f024-4c46-b5c4-0cf6b40c2c26",
+		"name": "Finstc LLC",
+		"description": "Test api for Finstc LLC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/api/v1/dealers/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "АВТОПРОДИКС ПРИМОРСКИЙ",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "М. СТАРАЯ ДЕРЕВНЯ, УЛ. ШКОЛЬНАЯ, Д. 71, КОРП. 2 САНКТ-ПЕТЕРБУРГ",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/dealers/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"dealers",
+						""
+					]
+				},
+				"description": "Добовляем первый автосалон"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/v1/dealers/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "ФОРСАЖ",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "М. ОЗЕРКИ, УЛ. ХОШИМИНА, Д. 1 САНКТ-ПЕТЕРБУРГ",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/dealers/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"dealers",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/v1/dealers/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/dealers/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"dealers",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/v1/dealers/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "vin",
+							"value": "55689DF87SS95",
+							"type": "text"
+						},
+						{
+							"key": "brand",
+							"value": "Volvo",
+							"type": "text"
+						},
+						{
+							"key": "car_body",
+							"value": "Sedan",
+							"type": "text"
+						},
+						{
+							"key": "date_create",
+							"value": "05.06.2020",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/cars/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"cars",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/v1/dealers/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "vin",
+							"value": "547899GD54HD32",
+							"type": "text"
+						},
+						{
+							"key": "brand",
+							"value": "Nissan",
+							"type": "text"
+						},
+						{
+							"key": "car_body",
+							"value": "Sedan",
+							"type": "text"
+						},
+						{
+							"key": "date_create",
+							"value": "05.06.2021",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/cars/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"cars",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/v1/dealers/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "vin",
+							"value": "412200LK65OE97",
+							"type": "text"
+						},
+						{
+							"key": "brand",
+							"value": "Opel",
+							"type": "text"
+						},
+						{
+							"key": "car_body",
+							"value": "Sedan",
+							"type": "text"
+						},
+						{
+							"key": "date_create",
+							"value": "05.06.2021",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/cars/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"cars",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/v1/dealers/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/cars/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"cars",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/v1/dealers/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/dealers/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"dealers",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

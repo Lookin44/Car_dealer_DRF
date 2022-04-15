@@ -1,42 +1,14 @@
-from rest_framework import generics
+from rest_framework import viewsets
 
-from .models import Dealer, Car
-from .serializers import *
-
-
-class DealerCreateView(generics.CreateAPIView):
-    serializer_class = DealerDetailSerializer
+from .models import Car, Dealer
+from .serializers import CarSerializer, DealerSerializer
 
 
-class DealerListView(generics.ListAPIView):
-    serializer_class = DealerDetailSerializer
-    queryset = Dealer.objects.all()
-
-
-class DealerDetailView(generics.RetrieveUpdateAPIView):
-    serializer_class = DealerDetailSerializer
-    queryset = Dealer.objects.all()
-
-
-class DealerDestroyView(generics.DestroyAPIView):
-    serializer_class = DealerDetailSerializer
-    queryset = Dealer.objects.all()
-
-
-class CarCreateView(generics.CreateAPIView):
-    serializer_class = CarDetailSerializer
-
-
-class CarListView(generics.ListAPIView):
-    serializer_class = CarListSerializer
+class CarViewSets(viewsets.ModelViewSet):
     queryset = Car.objects.all()
+    serializer_class = CarSerializer
 
 
-class CarDetailView(generics.RetrieveUpdateAPIView):
-    serializer_class = CarDetailSerializer
-    queryset = Car.objects.all()
-
-
-class CarSellView(generics.DestroyAPIView):
-    serializer_class = CarDetailSerializer
-    queryset = Car.objects.all()
+class DealerViewSets(viewsets.ModelViewSet):
+    queryset = Dealer.objects.all()
+    serializer_class = DealerSerializer
